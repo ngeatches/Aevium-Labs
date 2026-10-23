@@ -1,26 +1,29 @@
-# Render Blueprint — STAGING. Review before applying; applying creates a paid service and disk.
-# Secrets marked sync:false are entered in the Render dashboard (never committed).
-# Production: duplicate this service as principium-production with DEPLOY_ENV=production,
-# its own disk, its own domain/PUBLIC_ORIGIN and its own Twilio/Resend settings (see docs/DEPLOYMENT.md).
+# Render Blueprint — Aevium Labs production store (aeviumlabs.com).
+# Applying creates a paid web service (~$7/mo) and a 1 GB disk (~$0.25/mo).
+# Secrets marked sync:false are typed into the Render form by the owner — never committed.
+# Launch stays restricted until the owner flips: ACCESS_GATE=public, DELIVERY_MODE=open, LAUNCH_APPROVED=yes.
 services:
   - type: web
-    name: principium-staging
+    name: aevium-labs
     runtime: docker
     plan: starter
     region: virginia
     branch: main
     numInstances: 1          # SQLite = exactly one instance. Do not scale out.
     healthCheckPath: /healthz
-    autoDeploy: false        # deploy deliberately after review
+    autoDeploy: true
+    domains:
+      - aeviumlabs.com
+      - www.aeviumlabs.com
     disk:
-      name: principium-staging-data
+      name: aevium-labs-data
       mountPath: /var/data
       sizeGB: 1
     envVars:
       - key: COMMERCE_MODE
         value: live
       - key: DEPLOY_ENV
-        value: staging
+        value: production
       - key: HOST
         value: 0.0.0.0
       - key: PORT
@@ -29,21 +32,25 @@ services:
         value: "1"
       - key: DATA_DIR
         value: /var/data
-      - key: ACCESS_GATE
+      - key: PUBLIC_ORIGIN
+        value: https://aeviumlabs.com
+      - key: ACCESS_GATE          # password until launch, then public
         value: password
-      - key: DELIVERY_MODE
+      - key: DELIVERY_MODE        # test = texts/emails only to the allowlists below
         value: test
       - key: SMS_DAILY_LIMIT
-        value: "50"
-      - key: PUBLIC_ORIGIN       # e.g. https://staging.yourdomain.com
+        value: "100"
+      - key: MAIL_FROM
+        value: Aevium Labs <orders@aeviumlabs.com>
+      - key: MAIL_REPLY_TO
+        value: orders@aeviumlabs.com
+      - key: PREVIEW_PASSWORD     # password to view the site before launch
         sync: false
-      - key: PREVIEW_PASSWORD
+      - key: ADMIN_PHONES         # e.g. +13055550123
         sync: false
-      - key: ADMIN_PHONES
+      - key: TEST_PHONE_ALLOWLIST # same number(s) as ADMIN_PHONES while testing
         sync: false
-      - key: TEST_PHONE_ALLOWLIST
-        sync: false
-      - key: TEST_EMAIL_ALLOWLIST
+      - key: TEST_EMAIL_ALLOWLIST # your own email(s) while testing
         sync: false
       - key: TWILIO_ACCOUNT_SID
         sync: false
@@ -52,12 +59,8 @@ services:
       - key: TWILIO_API_KEY_SECRET
         sync: false
       - key: TWILIO_VERIFY_SERVICE_SID
-        sync: false
+        value: VA325700f89b383d9e576f694c6b7c7aef
       - key: RESEND_API_KEY
         sync: false
       - key: RESEND_WEBHOOK_SECRET
-        sync: false
-      - key: MAIL_FROM            # e.g. Principium Peptides <orders@yourdomain.com>
-        sync: false
-      - key: MAIL_REPLY_TO
         sync: false
