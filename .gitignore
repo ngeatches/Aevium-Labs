@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+tmp/
+
+# Private local order database and uploaded proof files
+.data/
+
+# Generated from approved live configuration
+site-live/

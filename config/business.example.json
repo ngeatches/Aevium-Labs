@@ -1,0 +1,19 @@
+{
+  "_comment": "Copy to config/business.json and replace every value with owner-verified content. Live mode refuses to start until all checks pass. Not secret, but keep the repository private.",
+  "approved": { "by": "", "date": "" },
+  "businessName": "",
+  "supportEmail": "",
+  "supportPhone": "",
+  "hostingProvider": "Render",
+  "zelle": { "recipientName": "", "recipientHandle": "", "verified": false },
+  "shipping": { "countries": ["United States"], "flatFeeCents": 0 },
+  "tax": { "mode": "not_collected", "statement": "" },
+  "policyVersion": "",
+  "policiesApproved": false,
+  "retention": "",
+  "policies": {
+    "shipping": "",
+    "refunds": "",
+    "terms": ""
+  }
+}

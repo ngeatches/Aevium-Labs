@@ -1,0 +1,165 @@
+{
+  "_comment": "Template. config/catalog.json holds the owner-approved prices.",
+  "approved": {
+    "by": "",
+    "date": ""
+  },
+  "currency": "USD",
+  "products": {
+    "retatrutide-20": {
+      "name": "Retatrutide 20 mg",
+      "priceCents": 6500,
+      "available": true
+    },
+    "retatrutide-30": {
+      "name": "Retatrutide 30 mg",
+      "priceCents": 8500,
+      "available": true
+    },
+    "retatrutide-40": {
+      "name": "Retatrutide 40 mg",
+      "priceCents": 9500,
+      "available": true
+    },
+    "tesamorelin-10": {
+      "name": "Tesamorelin 10 mg",
+      "priceCents": 5000,
+      "available": true
+    },
+    "tesamorelin-20": {
+      "name": "Tesamorelin 20 mg",
+      "priceCents": 8000,
+      "available": true
+    },
+    "sermorelin-10": {
+      "name": "Sermorelin 10 mg",
+      "priceCents": 5000,
+      "available": true
+    },
+    "cjc-dac-10": {
+      "name": "CJC-1295 with DAC 10 mg",
+      "priceCents": 4500,
+      "available": true
+    },
+    "cjc-nodac-10": {
+      "name": "CJC-1295 without DAC 10 mg",
+      "priceCents": 4500,
+      "available": true
+    },
+    "cjc-ipa-blend": {
+      "name": "CJC-1295 (no DAC) / Ipamorelin 5 mg / 5 mg",
+      "priceCents": 4500,
+      "available": true
+    },
+    "ipamorelin-5": {
+      "name": "Ipamorelin 5 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "ipamorelin-10": {
+      "name": "Ipamorelin 10 mg",
+      "priceCents": 6000,
+      "available": true
+    },
+    "blend-ipa-tesa": {
+      "name": "Ipamorelin / Tesamorelin Blend 10 mg / 10 mg",
+      "priceCents": 7500,
+      "available": true
+    },
+    "bpc157-10": {
+      "name": "BPC-157 10 mg",
+      "priceCents": 6500,
+      "available": true
+    },
+    "tb500-5": {
+      "name": "TB-500 (Thymosin β4 fragment) 5 mg",
+      "priceCents": 4500,
+      "available": true
+    },
+    "tb500-10": {
+      "name": "TB-500 (Thymosin β4 fragment) 10 mg",
+      "priceCents": 6000,
+      "available": true
+    },
+    "blend-bpc-tb": {
+      "name": "BPC-157 / TB-500 Blend 10 mg / 10 mg",
+      "priceCents": 6500,
+      "available": true
+    },
+    "ghkcu-100": {
+      "name": "GHK-Cu 100 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "blend-gbt": {
+      "name": "GHK-Cu / BPC-157 / TB-500 Blend 70 mg",
+      "priceCents": 7000,
+      "available": true
+    },
+    "blend-gbtk": {
+      "name": "GHK-Cu / BPC-157 / TB-500 / KPV Blend 80 mg",
+      "priceCents": 7500,
+      "available": true
+    },
+    "kpv-10": {
+      "name": "KPV 10 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "motsc-40": {
+      "name": "MOTS-C 40 mg",
+      "priceCents": 7500,
+      "available": true
+    },
+    "pt141-1": {
+      "name": "PT-141 1 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "semax-10": {
+      "name": "Semax 10 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "selank-10": {
+      "name": "Selank 10 mg",
+      "priceCents": 3500,
+      "available": true
+    },
+    "dsip-5": {
+      "name": "DSIP 5 mg",
+      "priceCents": 4000,
+      "available": true
+    },
+    "epitalon-10": {
+      "name": "Epitalon 10 mg",
+      "priceCents": 6500,
+      "available": true
+    },
+    "mt2-10": {
+      "name": "Melanotan II 10 mg",
+      "priceCents": 3000,
+      "available": true
+    },
+    "nad-1000": {
+      "name": "NAD+ 1000 mg",
+      "priceCents": 6000,
+      "available": true
+    },
+    "cardiogen-10": {
+      "name": "Cardiogen 10 mg",
+      "priceCents": 4000,
+      "available": true
+    },
+    "vip-10": {
+      "name": "VIP 10 mg",
+      "priceCents": 4000,
+      "available": true
+    },
+    "blend-wolverine": {
+      "name": "Wolverine Blend 20 mg",
+      "priceCents": 6500,
+      "available": true
+    }
+  }
+}

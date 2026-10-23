@@ -1,0 +1,12 @@
+.git
+.data
+.env
+.env.*
+!.env.example
+node_modules
+site-live
+design
+docs
+tests
+*.zip
+HANDOFF_MANIFEST.sha256
