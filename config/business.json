@@ -1,8 +1,8 @@
 {
   "_comment": "Owner-verified store details. Live mode refuses to start until approved, zelle.verified and policiesApproved are set by the owner.",
   "approved": {
-    "by": "",
-    "date": ""
+    "by": "Nicky (owner)",
+    "date": "2026-11-11"
   },
   "businessName": "Aevium Labs",
   "supportEmail": "orders@aeviumlabs.com",
@@ -23,8 +23,8 @@
     "mode": "not_collected",
     "statement": "Prices do not include sales tax, and Aevium Labs does not currently collect sales tax at checkout. If your state requires you to pay use tax on purchases, you are responsible for reporting it."
   },
-  "policyVersion": "2026-10-23.1",
-  "policiesApproved": false,
+  "policyVersion": "2026-11-11.1",
+  "policiesApproved": true,
   "retention": "We keep order records, including contact and shipping details, for seven years to meet accounting and tax obligations, then delete them. Automatic database backups are kept for up to 30 days.",
   "policies": {
     "shipping": "We ship within the United States only. Shipping is a flat $15.00 per order, shown at checkout.\n\nOrders are prepared after we confirm your Zelle payment in our bank account. Most orders ship within 1–3 business days of payment confirmation. When your order ships, we email you the carrier and tracking number, and the details also appear under Your orders.\n\nPlease double-check your shipping address before placing your order. We are not responsible for packages delivered to an address entered incorrectly at checkout. If a package is lost in transit or arrives damaged, email orders@aeviumlabs.com within 7 days of the delivery date shown by the carrier and we will work with you on a resolution.",
